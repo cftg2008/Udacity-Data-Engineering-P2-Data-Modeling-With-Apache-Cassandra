@@ -16,10 +16,9 @@ It is important to point out that with Apache Cassandra, you model the database 
 3. Give me every user name (first and last) in my music app history who listened to the song 'All Hands Against His Own'
   
 ### 1.2 Query 1 <h3>
-* users - keeps unique user details with the following columns: user_id (PK), first_name, last_name, gender, level.
-* songs - records unique song details with the following columns: song_id (PK), title, artist_id, year, duration.
-* artists - stores unique artist details with the following columns: artist_id (PK), name, location, latitude, longitude.
-* time - maintains unique time details with the following columns: start_time (PK), hour, day, week, month, year, weekday.
+The table with the following columns has been created and loaded for Query 1 to work:
+* sessionid, itemInSession, artist, song, length 
+* PRIMARY KEY(sessionid, itemInSession)
 
 ## 2. Files in the project workspace <h2>
 In addition to the data/song_data and data/log_data files, the project workspace has the following components:
