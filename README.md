@@ -11,9 +11,9 @@ Use one source dataset called "event_data" to create the Apache Cassandra databa
 
 ### 1.1 Apache Cassandra Queries <h3>
 It is important to point out that with Apache Cassandra, you model the database tables on the queries you want to run. That is to say, it is a query-driven design approach. So, design queries to answer the following questions:
-* Give me the artist, song title and song's length in the music app history that was heard during sessionId = 338, and itemInSession = 4
-* Give me only the following: name of artist, song (sorted by itemInSession) and user (first and last name) for userid = 10, sessionid = 182
-* Give me every user name (first and last) in my music app history who listened to the song 'All Hands Against His Own'
+1. Give me the artist, song title and song's length in the music app history that was heard during sessionId = 338, and itemInSession = 4
+2. Give me only the following: name of artist, song (sorted by itemInSession) and user (first and last name) for userid = 10, sessionid = 182
+3. Give me every user name (first and last) in my music app history who listened to the song 'All Hands Against His Own'
   
 ### 1.2 Query 1 <h3>
 * users - keeps unique user details with the following columns: user_id (PK), first_name, last_name, gender, level.
