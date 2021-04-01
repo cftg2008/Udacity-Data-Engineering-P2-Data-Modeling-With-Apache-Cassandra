@@ -41,21 +41,10 @@ Below table with these columns has been created and loaded for Query 2 to work:
 * use SELECT WHERE statement with the conditions userid equal to 10 and sessionid equal to 182 plus sorted itemInSession to query the data table
 
 ### 1.4 Query 3 <h3>
-Below table with these columns has been created and loaded for Query 2 to work:
-* userid, sessionid, itemInSession, artist, song, firstname, lastname 
-* PRIMARY KEY((userid, sessionid), itemInSession)) - the combination of userid, sessionid, and itemInSession will make the primary key unique
-* use SELECT WHERE statement with the conditions userid equal to 10 and sessionid equal to 182 plus sorted itemInSession to query the data table
-## 2. Files in the project workspace <h2>
-In addition to the data/song_data and data/log_data files, the project workspace has the following components:
-
-### 2.1 create_tables.py <h3>
-This script does the following:
-
-* Drops (if exists) and creates the sparkify database
-* Establishes connection with the sparkify database and gets the database cursor
-* Calls the script "drop_table_queries" to drop all the sparkify's tables 
-* Calls the script "create_table_queries" to create all the sparkify's tables
-* Closes the database connection
+The table with below columns has been created and loaded for Query 3 to work:
+* song, userId, firstname, lastname
+* PRIMARY KEY(song, userId) - the combination of song title and userId will make a unique key
+* use SELECT WHERE statement with the condition song title equal to 'All Hands Against His Own' to get the resulting rows
 
 ### 2.2 sql_queries.py <h3>
 This script does the following:
