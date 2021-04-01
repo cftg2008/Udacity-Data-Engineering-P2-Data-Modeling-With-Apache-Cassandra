@@ -46,7 +46,7 @@ The table with below columns has been created and loaded for Query 3 to work:
 * PRIMARY KEY(song, userId) - the combination of song title and userId will make a unique key
 * use SELECT WHERE statement with the condition song title equal to 'All Hands Against His Own' to get the resulting rows
 
-## 2. Files in the Project Space <h2>
+## 2. Files in the project workspace <h2>
 
 ### 2.1 Project_1B_Template.ipynb <h3>
 This jupyter notebook contains detailed instructions on the ETL process to create, load, and query the Apache Cassandra tables to solve the Sparkify analytics team's questions.
