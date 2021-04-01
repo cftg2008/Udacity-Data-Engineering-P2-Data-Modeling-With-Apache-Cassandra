@@ -46,28 +46,10 @@ The table with below columns has been created and loaded for Query 3 to work:
 * PRIMARY KEY(song, userId) - the combination of song title and userId will make a unique key
 * use SELECT WHERE statement with the condition song title equal to 'All Hands Against His Own' to get the resulting rows
 
-### 2.2 sql_queries.py <h3>
-This script does the following:
+## 2. Files in the Project Space <h2>
 
-* Drops all the tables with the script "drop_tables_queries"
-* Creates all the tables with the script "create_tables_queries"
-* Inserts records into various tables when called by the ETL pipeline
+### 2.1 Project_1B_Template.ipynb <h3>
+This jupyter notebook contains detailed instructions on the ETL process to create, load, and query the Apache Cassandra tables to solve the Sparkify analytics team's questions.
 
-### 2.3 etl.ipynb <h3>
-This jupyter notedbook contains detailed instructions on the ETL process of each of the tables.
-
-### 2.4 test.ipynb <h3>
-This jupyter notedbook contains instructions to check the database construction process. 
-
-### 2.5 etl.py <h3>
-This script does the following:
-
-* Reads, processes and loads data from the song_data and log_data files into the tables created in the previous steps
-
-## 3. User guide <h2>
-To populate the tables with the data from the entire dataset of the two sources, run the following scripts in the command line window:
-
-* Enter "python3 create_tables.py", follow by the return key
-* Enter "python3 etl.py", follow by the return key
-
-After the above steps had completed, one can execute the steps in the test.ipynb scripts to perform data quality checks. 
+### 2.2 Event_datafile_new.csv <h3>
+This csv file is subset of the event_datafile_full dataset created for the purpose to insert data into the Apache Cassandra tables
