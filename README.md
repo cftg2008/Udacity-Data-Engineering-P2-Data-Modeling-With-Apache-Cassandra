@@ -15,7 +15,7 @@ It is important to point out that with Apache Cassandra, you model the database 
 * Give me only the following: name of artist, song (sorted by itemInSession) and user (first and last name) for userid = 10, sessionid = 182
 * Give me every user name (first and last) in my music app history who listened to the song 'All Hands Against His Own'
   
-### 1.2 Dimension tables <h3>
+### 1.2 Query 1 <h3>
 * users - keeps unique user details with the following columns: user_id (PK), first_name, last_name, gender, level.
 * songs - records unique song details with the following columns: song_id (PK), title, artist_id, year, duration.
 * artists - stores unique artist details with the following columns: artist_id (PK), name, location, latitude, longitude.
