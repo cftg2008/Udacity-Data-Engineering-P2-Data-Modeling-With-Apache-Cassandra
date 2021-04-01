@@ -9,6 +9,19 @@ Use one source dataset called "event_data" to create the Apache Cassandra databa
 * event_data/2018-11-08-events.csv
 * event_data/2018-11-09-events.csv
 
+Each file is made up of these columns:
+- artist
+- firstName of user
+- gender of user
+- item number in session
+- last name of user
+- length of the song
+- level (paid or free song)
+- location of the user
+- sessionId
+- song title
+- userId
+
 ### 1.1 Apache Cassandra Queries <h3>
 It is important to point out that with Apache Cassandra, you model the database tables on the queries you want to run. That is to say, it is a query-driven design approach. So, design queries to answer the following questions:
 1. Give me the artist, song title and song's length in the music app history that was heard during sessionId = 338, and itemInSession = 4
