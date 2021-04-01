@@ -6,8 +6,8 @@ The analytics team wanted a data enginner like you to create a Apache Cassandra 
 
 ## 1. Databset <h2>
 Use one source dataset called "event_data" to create the Apache Cassandra database. The directory of CSV files partitioned by date. Below are examples of filepaths to two files in the dataset:
-    event_data/2018-11-08-events.csv
-    event_data/2018-11-09-events.csv
+    *event_data/2018-11-08-events.csv
+    *event_data/2018-11-09-events.csv
 
 ### 1.1 Apache Cassandra Queries <h3>
 It is important to point out that with Apache Cassandra, you model the database tables on the queries you want to run. That is to say, it is a query-driven design approach. Design queries to answer the following questions:
