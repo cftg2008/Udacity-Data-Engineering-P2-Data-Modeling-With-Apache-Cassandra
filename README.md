@@ -31,7 +31,8 @@ It is important to point out that with Apache Cassandra, you model the database 
 ### 1.2 Query 1 <h3>
 The table with the following columns has been created and loaded for Query 1 to work:
 * sessionid, itemInSession, artist, song, length 
-* PRIMARY KEY(sessionid, itemInSession)
+* PRIMARY KEY(sessionid, itemInSession) - the combination of sessionid and itemInSession will make a unique key
+* use SELECT WHERE statement with the conditions sessionId equal to 338 and itemInSession equal to 4 to retrieve the resulting records
 
 ## 2. Files in the project workspace <h2>
 In addition to the data/song_data and data/log_data files, the project workspace has the following components:
