@@ -6,8 +6,8 @@ The analytics team wanted a data enginner like you to create a Apache Cassandra 
 
 ## 1. Databset <h2>
 Use one source dataset called "event_data" to create the Apache Cassandra database. The directory of CSV files partitioned by date. Below are examples of filepaths to two files in the dataset:
-    *event_data/2018-11-08-events.csv
-    *event_data/2018-11-09-events.csv
+* event_data/2018-11-08-events.csv
+* event_data/2018-11-09-events.csv
 
 ### 1.1 Apache Cassandra Queries <h3>
 It is important to point out that with Apache Cassandra, you model the database tables on the queries you want to run. That is to say, it is a query-driven design approach. Design queries to answer the following questions:
@@ -20,9 +20,6 @@ It is important to point out that with Apache Cassandra, you model the database 
 * songs - records unique song details with the following columns: song_id (PK), title, artist_id, year, duration.
 * artists - stores unique artist details with the following columns: artist_id (PK), name, location, latitude, longitude.
 * time - maintains unique time details with the following columns: start_time (PK), hour, day, week, month, year, weekday.
-
-### 1.3 ERD Diagram <h3>
-![ERD image](https://github.com/cftg2008/Udacity-Data-Engineering-P1-Data-Modeling-With-Postgres/blob/main/sparkify_db.png)
 
 ## 2. Files in the project workspace <h2>
 In addition to the data/song_data and data/log_data files, the project workspace has the following components:
